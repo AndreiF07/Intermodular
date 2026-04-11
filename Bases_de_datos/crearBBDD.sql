@@ -1,12 +1,6 @@
--- =========================
--- CREAR BASE DE DATOS
--- =========================
 CREATE DATABASE IF NOT EXISTS masaybrasa;
 USE masaybrasa;
 
--- =========================º
--- TABLA USUARIO
--- =========================
 CREATE TABLE Usuario (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100),
@@ -16,9 +10,6 @@ CREATE TABLE Usuario (
     telefono BIGINT UNIQUE
 );
 
--- =========================
--- TABLA EMPLEADO
--- =========================
 CREATE TABLE Empleado (
     id_empleado INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100),
@@ -29,17 +20,13 @@ CREATE TABLE Empleado (
     desempeno ENUM('camarero', 'cocinero', 'limpieza', 'gerente')
 );
 
--- =========================
--- TABLA MESA
--- =========================
+
 CREATE TABLE Mesa (
     id_mesa INT AUTO_INCREMENT PRIMARY KEY,
     cantidad_personas INT NOT NULL
 );
 
--- =========================
--- TABLA RESERVA
--- =========================
+
 CREATE TABLE Reserva (
     id_reserva INT AUTO_INCREMENT PRIMARY KEY,
     id_usuario INT,
@@ -53,9 +40,6 @@ CREATE TABLE Reserva (
         ON UPDATE CASCADE
 );
 
--- =========================
--- TABLA INTERMEDIA RESERVA_MESA
--- =========================
 CREATE TABLE Reserva_mesa (
     id_reserva INT,
     id_mesa INT,
@@ -81,21 +65,3 @@ CREATE TABLE Reserva_mesa (
         ON DELETE SET NULL
         ON UPDATE CASCADE
 );
-
-INSERT INTO Usuario (nombre, apellido, rol, correo, telefono) VALUES
-('Andrei', 'García', 'admin', 'andrei@mail.com', 111222333),
-('Lucía', 'Martín', 'user', 'lucia@mail.com', 444555666),
-('Carlos', 'Sánchez', 'user', 'carlos@mail.com', 777888999);
-
-INSERT INTO Empleado (nombre, apellido, dni, correo, telefono, desempeno) VALUES
-('Mario', 'López', '12345678A', 'mario@masaybrasa.com', 123123123, 'camarero'),
-('Juan', 'Garcia', '53847626C', 'juan@masaybrasa.com', 234234234, 'camarero'),
-('Ana', 'Ruiz', '23456789B', 'ana@masaybrasa.com', 345345345, 'cocinero'),
-('Pedro', 'Gómez', '34567890C', 'pedro@masaybrasa.com', 456456456, 'gerente');
-
-INSERT INTO Mesa (cantidad_personas) VALUES
-(2),
-(4),
-(4),
-(6),
-(8);
