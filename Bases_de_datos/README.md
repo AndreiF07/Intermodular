@@ -1,5 +1,4 @@
 # Bases de datos
-
 La empresa para la que está hecha la base de datos y el proyecto es un restaurante "Masa & Brasa".
 
 Se dispone de las siguientes entidades :
@@ -28,3 +27,5 @@ Una mesa puede aparecer en muchas reservas
 
 Un empleado puede gestionar varias asignaciones de reservas
 - 1:N con Reserva_mesa
+
+En este módulo hay dos directorios, uno, con los diagramas, tanto el Entidad / Relación, como el Modelo relacional, de todas las tablas / entidades de esta base de datos.
