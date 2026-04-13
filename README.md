@@ -8,3 +8,5 @@ Para la ejecución de este proyecto en cualquier equipo, se necesita una base de
 
 Este repositorio está dividido en las siguientes partes / módulos:
 - Bases de datos (./Bases_de_datos). Dentro de directorio están todos los archivos relacionados con el almacenaje y manejo de datos de la aplicacíon. Esta, a su vez, está dividida en tres partes, el readme correspondiente al módulo, un directorio con los diagramas de la base de datos (./Bases_de_datos/diagramas), y otro con las queries para la creacion de las bases de datos, la insercion de datos principales, y algunos SELECT´s para familiarizarse con la base de datos (./Bases_de_datos/sql).
+
+- Lenguaje de marcas (./Lenguaje_de_marcas). Aquí se encuentran todos los archivos relacionados con la página web informativa del restaurante, tanto el html, css y ej, como el readme dedicado a ese módulo. 

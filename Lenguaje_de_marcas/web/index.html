@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Masa & Brasa es un restaurante ficticio de cocina artesanal, panes de masa madre y carnes a la brasa en un ambiente cálido y profesional."/>
+
+        <title>Masa & Brasa | Restaurante artesanal</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="./css/styles.css" />
+
+        <script src="./js/script.js" defer></script>
+    </head>
+    <body>
+        <header class="site-header">
+            <nav class="navbar" aria-label="Navegación principal">
+                <a class="brand" href="#inicio" aria-label="Ir al inicio de Masa & Brasa">
+                    <span class="brand-text">Masa & Brasa</span>
+                </a>
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    Menú
+                </button>
+                <ul class="nav-links" id="main-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#carta">Carta</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Sobre nosotros</a></li>
+                    <li><a href="#galeria">Galería</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero section" id="inicio">
+                <div class="hero-content">
+                    <p class="eyebrow">Restaurante artesanal en el centro histórico</p>
+                    <h1>Pan de masa madre, brasas lentas y cocina con alma.</h1>
+                    <p class="hero-copy">
+                        En Masa & Brasa unimos la paciencia del obrador con el fuego vivo de la parrilla.
+                        Servimos platos honestos, producto de temporada y sobremesas sin prisa.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button primary" href="#carta">Ver carta</a>
+                        <a class="button secondary" href="#contacto">Reservar mesa</a>
+                    </div>
+                </div>
+                <aside class="hero-card" aria-label="Especialidad destacada">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80" alt="Carne a la brasa servida en una tabla de madera"/>
+                    <div>
+                        <span>Especial de la casa</span>
+                        <strong>Chuletón madurado con pan de masa madre tostado</strong>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="section intro-grid" aria-label="Resumen del restaurante">
+                <article class="info-card">
+                    <span class="card-number">01</span>
+                    <h2>Obrador propio</h2>
+                    <p>Fermentaciones de 24 a 48 horas, harinas seleccionadas y panes horneados cada mañana.</p>
+                </article>
+                <article class="info-card">
+                    <span class="card-number">02</span>
+                    <h2>Brasa de encina</h2>
+                    <p>Carnes, verduras y pescados cocinados lentamente para respetar textura, jugosidad y sabor.</p>
+                </article>
+                <article class="info-card">
+                    <span class="card-number">03</span>
+                    <h2>Producto cercano</h2>
+                    <p>Trabajamos con huertas, queserías y bodegas locales para una carta viva y de temporada.</p>
+                </article>
+            </section>
+
+            <section class="section menu-section" id="carta">
+                <div class="section-heading">
+                    <p class="eyebrow">Catálogo / Tarifas</p>
+                    <h2>Carta recomendada</h2>
+                    <p>Una selección breve y cuidada pensada para compartir al centro o disfrutar en formato menú.</p>
+                </div>
+                <div class="menu-grid">
+                    <article class="menu-item">
+                        <div>
+                            <h3>Pan de masa madre con aceite temprano</h3>
+                            <p>Hogaza tostada, aceite de oliva virgen extra y sal ahumada.</p>
+                        </div>
+                        <span>6 €</span>
+                    </article>
+                    <article class="menu-item">
+                        <div>
+                            <h3>Verduras de temporada a la brasa</h3>
+                            <p>Crema de almendra tostada, hierbas frescas y limón encurtido.</p>
+                        </div>
+                        <span>14 €</span>
+                    </article>
+                    <article class="menu-item">
+                        <div>
+                            <h3>Costilla ibérica lacada</h3>
+                            <p>Cocción lenta, glaseado de miel especiada y ensalada crujiente.</p>
+                        </div>
+                        <span>22 €</span>
+                    </article>
+                    <article class="menu-item">
+                        <div>
+                            <h3>Lubina al carbón</h3>
+                            <p>Patata asada, mantequilla cítrica y verduras encurtidas.</p>
+                        </div>
+                        <span>24 €</span>
+                    </article>
+                    <article class="menu-item">
+                        <div>
+                            <h3>Menú Brasa</h3>
+                            <p>Entrante, principal, postre casero, pan del día y bebida.</p>
+                        </div>
+                        <span>32 €</span>
+                    </article>
+                    <article class="menu-item">
+                        <div>
+                            <h3>Tarta templada de queso</h3>
+                            <p>Base crujiente, crema suave y compota de fruta de temporada.</p>
+                        </div>
+                        <span>7 €</span>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section services-section" id="servicios">
+                <div class="section-heading">
+                    <p class="eyebrow">Servicios / Actividades</p>
+                    <h2>Más que una comida</h2>
+                </div>
+                <div class="service-list">
+                    <article>
+                        <h3>Reservas para grupos</h3>
+                        <p>Mesas familiares, comidas de empresa y celebraciones privadas con menús cerrados.</p>
+                    </article>
+                    <article>
+                        <h3>Catas de pan y vino</h3>
+                        <p>Encuentros mensuales para descubrir fermentaciones, maridajes y productores locales.</p>
+                    </article>
+                    <article>
+                        <h3>Brunch de domingo</h3>
+                        <p>Tostadas de masa madre, huevos a la brasa, bollería casera y café de especialidad.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section about-section" id="nosotros">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?auto=format&fit=crop&w=1000&q=80" alt="Equipo de cocina preparando platos en un restaurante" />
+                </div>
+                <div class="about-content">
+                    <p class="eyebrow">Sobre nosotros</p>
+                    <h2>Nacimos de una mesa compartida y un horno encendido.</h2>
+                    <p>
+                        Masa & Brasa es un restaurante ficticio creado por un pequeño equipo de cocineros,
+                        panaderos y camareros que creen en el oficio bien hecho. Nuestra propuesta combina
+                        técnicas tradicionales, producto local y una atención cercana.
+                    </p>
+                    <p>
+                        Cada día elaboramos pan, preparamos fondos y encendemos la brasa con tiempo. Queremos
+                        que cada visita se sienta como una comida especial, sin perder la naturalidad de un
+                        restaurante de barrio.
+                    </p>
+                    <div class="stats" aria-label="Datos del restaurante">
+                        <span><strong>48 h</strong> fermentación máxima</span>
+                        <span><strong>12</strong> productores cercanos</span>
+                        <span><strong>7/7</strong> pan recién hecho</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section schedule-gallery" id="galeria">
+                <div class="section-heading">
+                    <p class="eyebrow">Horarios e instalaciones</p>
+                    <h2>Un espacio cálido para comer, brindar y volver.</h2>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=80" alt="Interior acogedor de un restaurante con mesas" />
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=900&q=80" alt="Pizza artesanal recién horneada sobre una mesa" />
+                    <img src="https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=900&q=80" alt="Parrilla encendida con comida cocinándose al fuego"/>
+                </div>
+                <div class="hours-card">
+                    <h3>Horario</h3>
+                    <ul>
+                        <li><span>Lunes a jueves</span><strong>13:00 - 16:00 / 20:00 - 23:00</strong></li>
+                        <li><span>Viernes y sábado</span><strong>13:00 - 00:00</strong></li>
+                        <li><span>Domingo</span><strong>12:30 - 17:00</strong></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section blog-section" id="noticias">
+                <div class="section-heading">
+                    <p class="eyebrow">Noticias / Blog</p>
+                    <h2>Lo último de la casa</h2>
+                </div>
+                <div class="blog-grid">
+                    <article>
+                        <time datetime="2026-04-03">3 abril 2026</time>
+                        <h3>Nueva carta de primavera</h3>
+                        <p>Entrantes verdes, pescados al carbón y postres con fruta fresca llegan esta semana.</p>
+                    </article>
+                    <article>
+                        <time datetime="2026-04-10">10 abril 2026</time>
+                        <h3>Taller de masa madre</h3>
+                        <p>Una actividad práctica para aprender a refrescar, formar y hornear pan en casa.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section contact-section" id="contacto">
+                <div class="contact-info">
+                    <p class="eyebrow">Contacto</p>
+                    <h2>Reserva tu mesa</h2>
+                    <p>
+                        Escríbenos para reservar, consultar menús de grupo o pedir información sobre nuestras
+                        actividades. Respondemos normalmente en el mismo día.
+                    </p>
+                    <address>
+                        Calle del Horno 18, 37008 Salamanca<br />
+                        Tel. <a href="tel:+34910000000">+34 910 000 000</a><br />
+                        <a href="mailto:hola@masaybrasa.com">hola@masaybrasa.com</a>
+                    </address>
+                </div>
+                <form class="contact-form" id="reservation-form">
+                    <label>
+                        Nombre
+                        <input type="text" name="name" placeholder="Tu nombre" required />
+                    </label>
+                    <label>
+                        Correo electrónico
+                        <input type="email" name="email" placeholder="nombre@correo.com" required />
+                    </label>
+                    <label>
+                        Fecha de reserva
+                        <input type="date" name="date" required />
+                    </label>
+                    <label>
+                        Mensaje
+                        <textarea name="message" rows="5" placeholder="Número de personas, hora aproximada o consulta"></textarea>
+                    </label>
+                    <button class="button primary" type="submit">Enviar solicitud</button>
+                    <p class="form-message" id="form-message" role="status" aria-live="polite"></p>
+                </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div>
+                <strong>Masa & Brasa</strong>
+                <p>Cocina artesanal, masa madre y brasa de encina.</p>
+            </div>
+            <a href="#inicio">Volver arriba</a>
+        </footer>
+    </body>
+</html>
