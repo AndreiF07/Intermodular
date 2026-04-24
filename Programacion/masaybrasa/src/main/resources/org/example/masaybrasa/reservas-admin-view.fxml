@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="500.0" prefWidth="780.0" spacing="12.0"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.masaybrasa.controller.ReservasAdminController">
+    <padding>
+        <Insets bottom="20.0" left="24.0" right="24.0" top="20.0"/>
+    </padding>
+
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <Label text="Reservas">
+            <font>
+                <javafx.scene.text.Font name="System Bold" size="18.0"/>
+            </font>
+        </Label>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button onAction="#onVolver" text="Volver"/>
+    </HBox>
+
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <Label text="Fecha:"/>
+        <DatePicker fx:id="fechaPicker"/>
+        <Button onAction="#onBuscar" text="Buscar"/>
+    </HBox>
+
+    <TableView fx:id="reservasTable" prefHeight="340.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="idCol" prefWidth="60.0" text="ID"/>
+            <TableColumn fx:id="usuarioCol" prefWidth="200.0" text="Usuario"/>
+            <TableColumn fx:id="fechaCol" prefWidth="180.0" text="Fecha y hora"/>
+            <TableColumn fx:id="estadoCol" prefWidth="120.0" text="Estado"/>
+            <TableColumn fx:id="mesaCol" prefWidth="100.0" text="Mesa"/>
+        </columns>
+    </TableView>
+
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <Button defaultButton="true" onAction="#onEditar" text="Editar reserva"/>
+    </HBox>
+</VBox>

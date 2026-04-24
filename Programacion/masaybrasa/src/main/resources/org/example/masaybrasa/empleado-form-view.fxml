@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="440.0" prefWidth="380.0" spacing="10.0"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.masaybrasa.controller.EmpleadoFormController">
+    <padding>
+        <Insets bottom="20.0" left="24.0" right="24.0" top="20.0"/>
+    </padding>
+
+    <Label text="Datos del empleado">
+        <font>
+            <javafx.scene.text.Font name="System Bold" size="16.0"/>
+        </font>
+    </Label>
+
+    <VBox spacing="4.0">
+        <Label text="Nombre"/>
+        <TextField fx:id="nombreField"/>
+    </VBox>
+    <VBox spacing="4.0">
+        <Label text="Apellido"/>
+        <TextField fx:id="apellidoField"/>
+    </VBox>
+    <VBox spacing="4.0">
+        <Label text="DNI"/>
+        <TextField fx:id="dniField"/>
+    </VBox>
+    <VBox spacing="4.0">
+        <Label text="Correo"/>
+        <TextField fx:id="correoField"/>
+    </VBox>
+    <VBox spacing="4.0">
+        <Label text="Telefono"/>
+        <TextField fx:id="telefonoField"/>
+    </VBox>
+    <VBox spacing="4.0">
+        <Label text="Desempeno"/>
+        <ChoiceBox fx:id="desempenoChoice" maxWidth="Infinity"/>
+    </VBox>
+
+    <Label fx:id="errorLabel" textFill="RED"/>
+
+    <HBox alignment="CENTER_RIGHT" spacing="10.0">
+        <Button onAction="#onCancelar" text="Cancelar"/>
+        <Button defaultButton="true" onAction="#onGuardar" text="Guardar"/>
+    </HBox>
+</VBox>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="500.0" prefWidth="780.0" spacing="12.0"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="org.example.masaybrasa.controller.EmpleadosController">
+    <padding>
+        <Insets bottom="20.0" left="24.0" right="24.0" top="20.0"/>
+    </padding>
+
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <Label text="Empleados">
+            <font>
+                <javafx.scene.text.Font name="System Bold" size="18.0"/>
+            </font>
+        </Label>
+        <Region HBox.hgrow="ALWAYS"/>
+        <Button onAction="#onVolver" text="Volver"/>
+    </HBox>
+
+    <TableView fx:id="empleadosTable" prefHeight="360.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="idCol" prefWidth="50.0" text="ID"/>
+            <TableColumn fx:id="nombreCol" prefWidth="110.0" text="Nombre"/>
+            <TableColumn fx:id="apellidoCol" prefWidth="110.0" text="Apellido"/>
+            <TableColumn fx:id="dniCol" prefWidth="100.0" text="DNI"/>
+            <TableColumn fx:id="correoCol" prefWidth="170.0" text="Correo"/>
+            <TableColumn fx:id="telefonoCol" prefWidth="100.0" text="Telefono"/>
+            <TableColumn fx:id="desempenoCol" prefWidth="110.0" text="Desempeno"/>
+        </columns>
+    </TableView>
+
+    <HBox alignment="CENTER_LEFT" spacing="10.0">
+        <Button defaultButton="true" onAction="#onNuevo" text="Nuevo"/>
+        <Button onAction="#onEditar" text="Editar"/>
+        <Button onAction="#onEliminar" text="Eliminar"/>
+    </HBox>
+</VBox>
