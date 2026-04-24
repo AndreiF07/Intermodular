@@ -10,3 +10,10 @@ Este repositorio está dividido en las siguientes partes / módulos:
 - Bases de datos (./Bases_de_datos). Dentro de directorio están todos los archivos relacionados con el almacenaje y manejo de datos de la aplicacíon. Esta, a su vez, está dividida en tres partes, el readme correspondiente al módulo, un directorio con los diagramas de la base de datos (./Bases_de_datos/diagramas), y otro con las queries para la creacion de las bases de datos, la insercion de datos principales, y algunos SELECT´s para familiarizarse con la base de datos (./Bases_de_datos/sql).
 
 - Lenguaje de marcas (./Lenguaje_de_marcas). Aquí se encuentran todos los archivos relacionados con la página web informativa del restaurante, tanto el html, css y ej, como el readme dedicado a ese módulo. 
+
+- Programación (./Programacion). Todo el proyecto de Intellij de la aplicación de escritorio, donde se puede registrar, iniciar sesión, crear / manejar reservas, etc... Estructura definida en MPO.
+
+- MPO. La arquitectura del proyecto incluye, dentro de la carpeta src/main, la clase main y sesión. Todos los controladores están en la carpeta "controller". "dao" contiene todas las consultas contra la base de datos. En "database"se aloja la conexión a la base de datos. "model" contiene todas las clases modelo usadas en el proyecto. Por último, los FXML´s están en resources/org/example/masaybrasa, que son las interfaces gráficas.
+
+La mejora de este módulo con respecto al proyecto base de programación pensado, es la asignación automática de los camareros. En las versiones previas, se los tenía que asignar a mano un Admin.
+
