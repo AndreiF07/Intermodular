@@ -19,5 +19,5 @@ La mejora de este módulo con respecto al proyecto base de programación pensado
 
 - Sistemas informáticos (./Sistemas). Este módulo incluye un archivo markdown donde se explica en detalle los requisitos mínimos del equipo para poder ejecutar y utilizar la app de manera satisfactoria, junto con los procesos de instalación y mantenimiento. También se adjuntan capturas de su funcionamiento
 
-
+- Itinerario personal para la empleabilidad (./IPE). Aquí está la presentación tanto del proyecto, con su explicación y capturas; como mi descripción profesional y reflexiones sobre el proyecto.
 

@@ -1,4 +1,4 @@
-La página representa un portal informativo de mi restaurante.
+## La página representa un portal informativo de mi restaurante.
 
 Está dividida en:
 
