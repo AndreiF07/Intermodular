@@ -17,3 +17,7 @@ Este repositorio está dividido en las siguientes partes / módulos:
 
 La mejora de este módulo con respecto al proyecto base de programación pensado, es la asignación automática de los camareros. En las versiones previas, se los tenía que asignar a mano un Admin.
 
+- Sistemas informáticos (./Sistemas). Este módulo incluye un archivo markdown donde se explica en detalle los requisitos mínimos del equipo para poder ejecutar y utilizar la app de manera satisfactoria, junto con los procesos de instalación y mantenimiento. También se adjuntan capturas de su funcionamiento
+
+
+

@@ -16,7 +16,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         primaryStage = stage;
-        stage.setTitle("Mas y Brasa");
+        stage.setTitle("Masa y Brasa");
         loadView("login-view.fxml");
         stage.show();
     }
